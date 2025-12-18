@@ -12,8 +12,7 @@ local window = library:AddWindow("PAMPUKSA | SUPOT VERSION", {
     min_size = Vector2.new(670, 1000),
     can_resize = true,
 })
-
--- Main Tab
+ Main Tab
 Killer:AddSwitch("OP Punch When Dead | Combo", function(enabled)
 	comboActive = enabled
 	cleanupAll()
