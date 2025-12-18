@@ -7,12 +7,17 @@ local startRebirths = player.leaderstats.Rebirths.Value
 local displayName = player.DisplayName
 
 -- Create Main Window
-local window = library:AddWindow("PAMPUKSA | SUPOT VERSION", {
+local window = library:AddWindow("TAKBO MGA SUPOT!", {
     main_color = Color3.fromRGB(0, 0, 0),
     min_size = Vector2.new(670, 1000),
     can_resize = true,
 })
- Main Tab
+
+-- Main Tab
+local Main = window:AddTab("Main")
+local farmPlusTab = window:AddTab("Farm")
+
+Main:AddLabel("Local Player")
 Killer:AddSwitch("OP Punch When Dead | Combo", function(enabled)
 	comboActive = enabled
 	cleanupAll()
